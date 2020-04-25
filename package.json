@@ -4,7 +4,8 @@
   "description": "MERN stack app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "build": "webpack -p",
+    "start": "npm run server",
     "dev": "webpack-dev-server --open",
     "initialize": "babel-node src/server/initialize-db.js",
     "server": "babel-node src/server/server.js",
