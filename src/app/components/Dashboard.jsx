@@ -10,13 +10,13 @@ const mapStateToProps = state => {
 }
 
 const Dashboard  = ({ groups }) => (
-    <div>
-        <h2>Dashboard</h2>
+    <div className="row">
         {groups.map(group => (
             <TaskList
                 key={group.id}
                 id={group.id}
                 name={group.name}
+                className="col"
             />
         ))}
     </div>
